@@ -6,12 +6,10 @@ class Distance{
     int m;
     public :
     void seting(int km  , int m1){
-        if(m >=1000){
-            km+= (m/1000);
-            m = m%1000;
-        };
-        this-> km =km;
-        this ->m = m;
+        this-> km =km+=m/1000;
+        this ->m = m%1000;
+        
+        
     };
     void get(){
         cout<<"the total km is"<<km;
