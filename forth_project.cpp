@@ -2,12 +2,13 @@
 
 using namespace std;
 class Distance{
-    typedef int km;
-    km km1;
-    typedef int m;
-    m m1;
+     int km;
+    int m;
     public :
-    void seting(km km1 , m m1){
+    void seting(int km  , int m1){
+        if(m >=1000){
+            
+        };
         this-> km1 =km1;
         this ->m1 = m1;
     };
@@ -17,16 +18,15 @@ class Distance{
     };
     Distance operator+(Distance n){
         class Distance new1;
-        new1.km1 = this->km1 + n.km1;
-        new1.m1 = this->m1 + n.m1;
+        if()
         return new1;
     };
 };
 int main()
 {
     class Distance distance1 , distance2 , distance3;
-    distance1.seting(10 , 5);
-    distance2.seting(15 , 3);
+    distance1.seting(3 , 1020);
+    distance2.seting(2 , 2050);
     distance3 = distance1+distance2;
     distance3.get();
     return 0;
