@@ -7,18 +7,20 @@ class Distance{
     public :
     void seting(int km  , int m1){
         if(m >=1000){
-            
+            km+= (m/1000);
+            m = m%1000;
         };
-        this-> km1 =km1;
-        this ->m1 = m1;
+        this-> km =km;
+        this ->m = m;
     };
     void get(){
-        cout<<"the total km is"<<km1;
-        cout<<"the total m is"<<m1;
+        cout<<"the total km is"<<km;
+        cout<<"the total m is"<<m;
     };
     Distance operator+(Distance n){
         class Distance new1;
-        if()
+        new1.km = this->km+n.km;
+        new1.m = this->m+n.m;
         return new1;
     };
 };
