@@ -7,7 +7,7 @@ class Distance{
     public :
     void seting(int km  , int m1){
         this-> km =km+=m/1000;
-        this ->m = m%1000;
+        this ->m = m-1000;
         
         
     };
